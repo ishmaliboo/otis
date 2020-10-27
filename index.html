@@ -7,27 +7,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		body {
-			text-align: left;
-			background-color: #33ccff;
-			font-family: Georgia;
-		}
-		img.thumb {
-			min-width:5%;
-		}
-	</style>
+	<link rel="stylesheet" href="meta/style.css">
 </head>
 
 <body>
-    <div id="title" style="font-size:6vw;font-family:Arial Black;margin-top:0%;">
-	<h1 style="margin-top:0%;"> oxford tiny instrument society </h1>
+    <div class="title" id="title">
+	<h1> oxford tiny instrument society </h1>
 	</div>
 	
-	<div id="bar" style="text-align:center;">
-	</div>
+	<div class="bar" id="bar"> </div>
 	
-	<div id="faq" style="width:80%;margin:10%;">
+	<div class="para" id="faq">
 	<p>
 	<h3>pre-emptive FAQ:</h3>
 
@@ -45,38 +35,16 @@
 	</p>
 	</div>
 
-	<div id="bar2" style="text-align:center;">
-	</div>
+	<div class="bar" id="bar2"> </div>
 	
-	<div id="footer">
+	<div class="footer" id="footer">
 	<p> website (c) 2020 - ismael carlosse </p>
 	
+		<script src="meta/bars.js"></script>
+		
 		<script>
-		function addBar(id) {
-			var bar = document.getElementById(id);
-			
-			bar.appendChild(createThumb("otto.gif", "otto-open.gif", "otto.ogg"));
-			bar.appendChild(createThumb("drum.gif", "drum-hit.gif", "otto.ogg"));
-			bar.appendChild(createThumb("mel.gif", "mel-chord.gif", "otto.ogg"));
-		}
-		
-		function createThumb(src, src2, snd) {
-			var img = document.createElement('img');
-			img.src = src;
-			img.setAttribute("class", "thumb");
-			
-			//var audio = new Audio(snd);
-			//img.audio = audio;
-			//this.audio.plau;
-			
-			img.setAttribute("onmouseover", "this.src=\""+src2+"\"")
-			img.setAttribute("onmouseout", "this.src=\""+src+"\"")
-			
-			return img
-		}
-		
-		addBar("bar");
-		addBar("bar2");
+			addBar("bar");
+			addBar("bar2");
 		</script>
 		
 	</div>

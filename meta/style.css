@@ -1,0 +1,41 @@
+body {
+	text-align: left;
+	background-color: #33ccff;
+	font-family: Georgia;
+}
+
+div {
+	margin-top:0%;
+	margin-bottom:0%;
+}
+
+div.bar {
+	text-align:center;
+}
+
+div.title {
+	font-size:6vw;
+}
+
+div.para {
+	width:80%;
+	margin:10%;
+}
+
+div.footer {
+	margin-bottom:0%;
+}
+
+
+h1 {
+	font-family:Arial Black;
+	margin-top:0%;
+}
+
+img.thumb {
+	min-width:5%;
+}
+
+div.centered {
+	text-align: center;
+}
