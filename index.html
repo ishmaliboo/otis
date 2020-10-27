@@ -25,9 +25,6 @@
 	</div>
 	
 	<div id="bar" style="text-align:center;">
-	<img src="otto.gif" class="thumb" alt="otomatone">
-	<img src="drum.gif" class="thumb" alt="drum">
-	<img src="mel.gif" class="thumb" alt="melodica">
 	</div>
 	
 	<div id="faq" style="width:80%;margin:10%;">
@@ -49,13 +46,39 @@
 	</div>
 
 	<div id="bar2" style="text-align:center;">
-	<img src="otto.gif" class="thumb">
-	<img src="drum.gif" class="thumb">
-	<img src="mel.gif" class="thumb">
 	</div>
 	
 	<div id="footer">
 	<p> website (c) 2020 - ismael carlosse </p>
+	
+		<script>
+		function addBar(id) {
+			var bar = document.getElementById(id);
+			
+			bar.appendChild(createThumb("otto.gif", "otto-open.gif", "otto.ogg"));
+			bar.appendChild(createThumb("drum.gif", "drum-hit.gif", "otto.ogg"));
+			bar.appendChild(createThumb("mel.gif", "mel-chord.gif", "otto.ogg"));
+		}
+		
+		function createThumb(src, src2, snd) {
+			var img = document.createElement('img');
+			img.src = src;
+			img.setAttribute("class", "thumb");
+			
+			//var audio = new Audio(snd);
+			//img.audio = audio;
+			//this.audio.plau;
+			
+			img.setAttribute("onmouseover", "this.src=\""+src2+"\"")
+			img.setAttribute("onmouseout", "this.src=\""+src+"\"")
+			
+			return img
+		}
+		
+		addBar("bar");
+		addBar("bar2");
+		</script>
+		
 	</div>
 
 </body>
