@@ -17,6 +17,14 @@ div.title {
 	font-size:6vw;
 }
 
+div.navbar {
+	background-color: #113366;
+	margin-bottom: 5%;
+	
+	position: sticky;
+	top: 0;
+}
+
 div.para {
 	width:80%;
 	margin:10%;
@@ -26,16 +34,35 @@ div.footer {
 	margin-bottom:0%;
 }
 
-
 h1 {
 	font-family:Arial Black;
 	margin-top:0%;
+	margin-bottom:0%;
 }
 
 img.thumb {
 	min-width:5%;
 }
 
-div.centered {
+ul {
+	list-style-type: none;
+	margin: 0%;
+	padding: 0%;
+	font-size:3vw;
+}
+
+li {
+	display: inline;
+}
+
+a.button {
+	color: #000000;
+	text-decoration: none;
+	
+	display: inline-block;
 	text-align: center;
+	
+	background-color: #22aacc;
+	border: 2px solid #000000;
+	width: 10%;
 }
