@@ -11,16 +11,11 @@
 </head>
 
 <body>
-    <div class="title" id="title">
-	<h1> oxford tiny instrument society </h1>
-	</div>
-	
-	<div class="navbar" id="navbar">
-	<ul>
-		<a class="button" href="index.html">home</a>
-		<a class="button" href="faq.html">faq</a>
-	</ul>
-	</div>
+	<?php
+		$path = $_SERVER['DOCUMENT_ROOT'];
+		$path .= '/meta/header.php'; 
+		include $path
+	?>
 	
 	<div class="bar" id="bar"> </div>
 	
@@ -44,18 +39,18 @@
 
 	<div class="bar" id="bar2"> </div>
 	
-	<div class="footer" id="footer">
-	<p> website (c) 2020 - ismael carlosse </p>
-	
-		<script src="meta/bars.js"></script>
-		
-		<script>
-			addBar("bar");
-			addBar("bar2");
-		</script>
-		
-	</div>
+	<?php
+		$path = $_SERVER['DOCUMENT_ROOT'];
+		$path .= '/meta/footer.php'; 
+		include $path
+	?>
 
+	<script src="meta/bars.js"></script>
+	
+	<script>
+		addBar("bar");
+		addBar("bar2");
+	</script>
 </body>
 
 </html>
